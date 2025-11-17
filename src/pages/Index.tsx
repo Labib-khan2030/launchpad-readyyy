@@ -11,7 +11,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-lg font-light tracking-[0.2em]">AURAGEN</div>
+          <div className="text-lg font-light tracking-[0.2em]">CORETEX</div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
             <a href="#gallery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Gallery</a>
@@ -56,7 +56,7 @@ const Index = () => {
               size="lg"
               className="bg-slate-900 text-white hover:bg-slate-800 rounded-full px-8 h-12 text-base font-medium border border-blue-500/50"
             >
-              Try AuraGen
+              Try Coretex
             </Button>
             <Button
               size="lg"
