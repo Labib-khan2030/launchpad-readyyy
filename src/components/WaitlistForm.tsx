@@ -68,13 +68,13 @@ export const WaitlistForm = ({ onSuccess }: WaitlistFormProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
+    <form onSubmit={handleSubmit} className="space-y-5 w-full max-w-md">
       <Input
         type="text"
         placeholder="Username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className="bg-card border-border text-foreground"
+        className="h-12 bg-background border-border text-foreground rounded-lg"
         disabled={isLoading || isSuccess}
       />
       <Input
@@ -82,12 +82,12 @@ export const WaitlistForm = ({ onSuccess }: WaitlistFormProps) => {
         placeholder="Email address"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="bg-card border-border text-foreground"
+        className="h-12 bg-background border-border text-foreground rounded-lg"
         disabled={isLoading || isSuccess}
       />
       <Button
         type="submit"
-        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
+        className="w-full h-12 bg-primary text-primary-foreground hover:bg-primary/95 font-medium rounded-lg transition-all hover:scale-[1.01]"
         disabled={isLoading || isSuccess}
       >
         {isLoading ? (

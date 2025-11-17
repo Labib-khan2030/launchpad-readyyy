@@ -57,24 +57,25 @@ export const WaitlistButton = () => {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row items-center gap-4">
+      <div className="flex flex-col items-center gap-3">
         <Button
           onClick={() => setIsOpen(true)}
           size="lg"
-          className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-lg px-8 py-6"
+          className="bg-primary text-primary-foreground hover:bg-primary/95 font-medium text-base px-8 h-12 rounded-full transition-all hover:scale-[1.02]"
         >
-          <Users className="mr-2 h-5 w-5" />
           Join Waitlist
         </Button>
-        <div className="text-muted-foreground text-sm font-medium">
-          <span className="text-foreground font-bold text-lg">{count}</span> joined so far
-        </div>
+        {count > 0 && (
+          <div className="text-muted-foreground text-sm">
+            <span className="text-foreground font-semibold">{count}</span> joined so far
+          </div>
+        )}
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="bg-card border-border">
+        <DialogContent className="bg-background border-border rounded-2xl">
           <DialogHeader>
-            <DialogTitle className="text-foreground text-2xl">Join the Waitlist</DialogTitle>
+            <DialogTitle className="text-foreground text-2xl font-bold">Join the Waitlist</DialogTitle>
             <DialogDescription className="text-muted-foreground">
               Be the first to know when we launch. Enter your details below.
             </DialogDescription>
